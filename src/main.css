@@ -1,0 +1,166 @@
+body, html {
+    background-color: #FFD0D0;
+    font-family: 'AvertaStd-Semibold';
+    color: black;
+    
+}
+
+.app {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+ p, h1, h2{
+    z-index: 5;
+    position: relative;
+    min-width: 220px;
+    margin: 0 auto; 
+   
+}
+
+h1 {
+   
+    font-size: 60px;
+    line-height: 148px;
+  
+}
+
+h2 {
+    font-size: 60px;
+}
+
+P {
+    font-family: 'AvertaStd-Regular';
+    /* font-style: normal;
+    font-weight: 400; */
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#svg1 {
+    position: relative;
+    left: -203px;
+    top: -200px;
+    z-index: 0;
+    width: 100%;
+    /* visibility: hidden; */
+}
+
+.app {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#svg2 {
+    position: relative;
+    width: 100%;
+    /* left: -207px; */
+    top: 191.07px;
+    z-index: 0;
+}
+
+#svg3 {
+    position: relative;
+    left: 107px;
+    /* left: 604px; */
+    top: 367px;
+    z-index: 0;
+    width: 100%;
+}
+
+#svg4 {
+    position: relative;
+    /* left: -207px; */
+    /* left: 96px; */
+    top: 784px; 
+    z-index: 0;
+    width: 100%;
+}
+
+#svg5 {
+    position: relative;
+    left: -207px;
+    
+    top: 1200px;
+    z-index: 0;
+    width: 150%;
+}
+
+.lnd-img {
+    /* z-index: 4;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    display: block; */
+    /* width: 621px;
+    height: 469px; */
+}
+
+.w-80 {
+    width: 90%;
+    /* visibility: hidden; */
+}
+
+.nav-link {
+    font-size: 24px;
+    color: black;
+}
+
+#bubble svg {
+    fill: white;
+}
+.remove-all-margin{
+    margin:0 ! important;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        .skills {
+          position: absolute;
+          left: 0;
+
+        }
+        .w-lg-50 {
+            width: 50%;
+        }
+        #svg1 {
+            /* top: 191.07px; */
+        }
+        #svg2 {
+            top: 200px;
+            left: -100px;
+        }
+        #svg3 {
+            top: 367px;
+        }
+        #svg4 {
+            top: 184px; 
+        }
+        #svg5 {
+            top: 400px;
+            left: 450px;
+        }
+      }
+
+      .project{
+        /* width: 200px;
+        height: 200px;
+        background: orange; */
+        
+      }
+
+      @keyframes wipe-enter {
+        0% {
+            transform: scale(0, .025);
+        }
+        50% {
+            transform: scale(1, .025);
+        }
+    }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .project-animation {
+          animation: wipe-enter 1s 1;
+        }
+      }
