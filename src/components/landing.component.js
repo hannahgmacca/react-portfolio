@@ -33,17 +33,17 @@ export default class Landing extends Component {
                 <Container classname="social-links">
                   <Row className="mt-4 social-links">
                     <Col>
-                      <a href="/">
+                      <a href="https://www.linkedin.com/in/hannahmcdonald42/">
                         <img src={LinkedIn} width="50px" className="shrink mx-auto d-block"></img>
                       </a>
                     </Col>
                     <Col>
-                      <a href="/">
+                      <a href="https://github.com/hannahgmacca">
                         <img src={GitHub} width="50px" className="shrink mx-auto d-block"></img>
                       </a>
                     </Col>
                     <Col>
-                      <a href="/">
+                      <a href="https://medium.com/@hannahmacca">
                         <img src={Medium} width="70px" className="shrink mx-auto d-block"></img>
                       </a>
                     </Col>
@@ -113,32 +113,6 @@ export default class Landing extends Component {
                 </Col>
               </Row>
           </Container>
-          {/* <Container className="mt-5">
-              <div className="text-lg-end text-center">
-              <h2 className="">Interests</h2>
-              <p className="">Some things i like</p>
-              </div>
-              <Row>
-                <Col>
-                
-                </Col>
-                <Col>
-                
-                </Col>
-                <Col>
-                
-                </Col>
-                <Col>
-                
-                </Col>
-                <Col>
-                
-                </Col>
-                <Col>
-                
-                </Col>
-              </Row>
-          </Container> */}
       </div>
     )
   }
