@@ -41,11 +41,15 @@ const CardInner = styled.div`
     // left: 0px;
 `
 
+const handleClick = (link, e) => {
+  window.open(link);
+}
+
 export default class Project extends Component {
   render() {
     return (
       
-      <ProjectCard color={this.props.color} className="mx-md-auto shrink mb-sm-4 mb-3">  
+      <ProjectCard color={this.props.color} className="mx-md-auto rise mb-sm-4 mb-3" onClick={(e) => handleClick(this.props.link, e)}>  
      {/* <CardBG></CardBG> */}
         <CardInner className="p-0">
         

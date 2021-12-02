@@ -116,20 +116,33 @@ P {
 }
 
 .skills { 
-    background-color: #F8C460;
-    color:white;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background-color: white;
+    color: black;
+    /* color:white; */
+    /* border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; */
+}
+
+.skills h3 {
+    font-size: 15px;
 }
 .remove-all-margin{
     margin:0 ! important;
+    }
+
+    @media only screen and (min-width: 990px) {
+        .container .social-links {
+            left: -50px;
+            position: relative;
+        }
     }
     
     @media only screen and (min-width: 600px) {
         .skills {
           position: absolute;
           left: 0;
-
+          border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
         }
         .w-lg-50 {
             width: 50%;
@@ -149,10 +162,12 @@ P {
         }
         #svg5 {
             top: 400px;
-            left: 450px;
+            left: 250px;
         }
       }
 
     .shrink { transition: all .2s ease-in-out; }
     .shrink:hover { transform: scale(.9); }
+    .rise { transition: all .2s ease-in-out;}
+    .rise:hover { margin: -30px;}
 

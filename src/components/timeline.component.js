@@ -1,6 +1,8 @@
 import "../main.css";
-import { ReactComponent as WorkIcon } from "../images/work.svg";
+import { ReactComponent as ProjectIcon } from "../images/work.svg";
 import { ReactComponent as SchoolIcon } from "../images/school.svg";
+import {ReactComponent as JobIcon } from "../images/job.svg"
+import GitHub from "../images/github.png";
 
 import timelineElements from "./timelineElements";
 
@@ -11,28 +13,54 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
+function renderIcon(icon) {
+    switch(icon) {
+      case 'project':
+        return <ProjectIcon />;
+      case 'school':
+        return <SchoolIcon />;
+      default:
+        return <JobIcon/>;
+    }
+  }
+
+function styleIcon(icon) {
+    switch(icon) {
+        case 'project':
+          return { background: "#06D6A0" };
+        case 'school':
+          return { background: "#f9c74f" };
+        default:
+          return {background: "skyblue"};
+      }
+}
+
 function Timeline() {
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#f9c74f" };
+//   let projectIconStyles = { background: "#06D6A0" };
+//   let schoolIconStyles = { background: "#f9c74f" };
+//   let jobStyles = {background: "blue"};
 
   return (
     <div>
       {/* <h1 className="title">Timeline</h1> */}
       <VerticalTimeline>
         {timelineElements.map((element) => {
-          let isWorkIcon = element.icon === "work";
+        //   let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
             element.buttonText !== null &&
             element.buttonText !== "";
-
+          let showDeployedLink =
+            element.deployedLink !== undefined &&
+            element.deployedLink !== null &&
+            element.deployedLink !== "";
           return (
             <VerticalTimelineElement
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+              iconStyle={styleIcon(element.icon)}
+              icon={renderIcon(element.icon)}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
@@ -42,15 +70,11 @@ function Timeline() {
               </h5>
               <p id="description">{element.description}</p>
               {showButton && (
-                <a
-                  className={`button ${
-                    isWorkIcon ? "workButton" : "schoolButton"
-                  }`}
-                  href="/"
-                >
-                  {element.buttonText}
+                <a href={element.buttonText}>
+                    <img src={GitHub} width="30px" className="shrink"></img>
                 </a>
               )}
+
             </VerticalTimelineElement>
           );
         })}

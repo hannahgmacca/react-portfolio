@@ -5,6 +5,7 @@ import Lady from "../images/lady.svg";
 import Terminal from "../images/terminal.png";
 import Outsource from "../images/outsource.png";
 import Tutal from "../images/tutal.png";
+import Pokemon from "../images/pokemon.png";
 import CSS from "../images/css.png";
 import JS from "../images/js.png"
 import HTML from "../images/html.png"
@@ -29,21 +30,21 @@ export default class Landing extends Component {
                   My name is Hannah. I’m a junior website developer with a love for user experience, food and writing. <br/><br/>
                   I love combining convention with creativity in order to problem solve.
                 </p>
-                <Container>
-                  <Row className="mt-4">
+                <Container classname="social-links">
+                  <Row className="mt-4 social-links">
                     <Col>
                       <a href="/">
-                        <img src={LinkedIn} width="50px" className="shrink"></img>
+                        <img src={LinkedIn} width="50px" className="shrink mx-auto d-block"></img>
                       </a>
                     </Col>
                     <Col>
                       <a href="/">
-                        <img src={GitHub} width="50px" className="shrink"></img>
+                        <img src={GitHub} width="50px" className="shrink mx-auto d-block"></img>
                       </a>
                     </Col>
                     <Col>
                       <a href="/">
-                        <img src={Medium} width="70px" className="shrink"></img>
+                        <img src={Medium} width="70px" className="shrink mx-auto d-block"></img>
                       </a>
                     </Col>
                   </Row>
@@ -65,21 +66,19 @@ export default class Landing extends Component {
          
           <Container className="">
             <Row className="pt-5 mx-auto">
-              <Col lg={4} sm={6} className="">
-                <Project color="white" text="Ruby CLI Game" image={Terminal} header="AirBnB Escape" className="mx-auto"></Project>
+              <Col md={6} xl={3} className="">
+                <Project color="white" text="Ruby CLI Game" image={Terminal} header="AirBnB Escape" className="mx-auto" link="https://github.com/hannahgmacca/ruby-escape-game"></Project>
               </Col>
-              <Col lg={4} sm={6} className="">
-                <Project color="white" text="Rails Job Board App" image={Outsource} header="Outsource" className="mx-auto"></Project>
+              <Col md={6} xl={3} className="">
+                <Project color="white" text="Rails Job Board App" image={Outsource} header="Outsource" className="mx-auto" link="https://github.com/hannahgmacca/rails-outsource"></Project>
                 </Col>
-              <Col lg={4} sm={6} className="mx-auto">
-                <Project color="white" text="Tutor search" image={Tutal} header="Tutal (WIP)" className="mx-auto"></Project>
+              <Col md={6} xl={3} className="mx-auto">
+                <Project color="white" text="Javascript + Poke API App" image={Pokemon} header="Pokemon Card" className="mx-auto" link="https://github.com/Ausiarm/PokemonCard"></Project>
               </Col>
-              {/* <Col lg={3} md={6} className="">
-                <Project color="white" text="PHP and Symfony" image={Desygner} className="mx-auto"></Project>
-              </Col> */}
-              {/* <Col lg={3} md={5} className="mx-md-3 mx-lg-0">
-                <Project color="white" text="PHP and Symfony Documentation" image={Desygner}></Project>
-              </Col> */}
+              <Col md={6} xl={3} className="mx-auto">
+                <Project color="white" text="React + Rails Tutor Search App" image={Tutal} header="Tutal (WIP)" className="mx-auto" link="https://github.com/russ-13/react-tutal"></Project>
+              </Col>
+             
             </Row>
           </Container>
           <Container className="mt-5">
