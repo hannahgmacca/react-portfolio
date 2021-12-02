@@ -4,7 +4,7 @@ import {Col, Container, Row} from 'react-bootstrap';
 import Lady from "../images/lady.svg";
 import Terminal from "../images/terminal.png";
 import Outsource from "../images/outsource.png";
-import Desygner from "../images/desygner.jpeg";
+import Tutal from "../images/tutal.png";
 import CSS from "../images/css.png";
 import JS from "../images/js.png"
 import HTML from "../images/html.png"
@@ -33,57 +33,61 @@ export default class Landing extends Component {
                   <Row className="mt-4">
                     <Col>
                       <a href="/">
-                        <img src={LinkedIn} width="50px"></img>
+                        <img src={LinkedIn} width="50px" className="shrink"></img>
                       </a>
                     </Col>
                     <Col>
                       <a href="/">
-                        <img src={GitHub} width="50px"></img>
+                        <img src={GitHub} width="50px" className="shrink"></img>
                       </a>
                     </Col>
                     <Col>
                       <a href="/">
-                        <img src={Medium} width="70px"></img>
+                        <img src={Medium} width="70px" className="shrink"></img>
                       </a>
                     </Col>
                   </Row>
                 </Container>
               </Col>
-              <Col lg={7} className="mt-5 float-right">
-                <img src={Lady} alt="Lady and phone" className="w-100 mt-lg-4"/>
+              <Col lg={7} className="float-right mb-5 mt-5">
+                <img src={Lady} alt="Lady and phone" className="w-100 mt-5"/>
               </Col>
             </Row>
           </Container>
-          <Container className="mt-5 w-100">
-              <div className="float-lg-end text-center mt-5">
-              <h2 className="mt-5">Projects</h2>
-              <p className="">Some things i've worked on.</p>
-              </div>
+          <Container>     
+            <Row>
+              <h2 className="mt-5 text-center text-md-end">Projects</h2>
+            </Row>
+             <Row>
+              <p className="text-center text-md-end">Some things i've worked on.</p>
+             </Row>
           </Container>
-          <Container className="w-100">
-            <Row className="pt-5 w-100 m-auto">
-              <Col lg={3} md={5} className="mx-md-4 mx-xlg-5">
-                <Project color="white" text="Ruby CLI Game" image={Terminal}></Project>
+         
+          <Container className="">
+            <Row className="pt-5 mx-auto">
+              <Col lg={4} sm={6} className="">
+                <Project color="white" text="Ruby CLI Game" image={Terminal} header="AirBnB Escape" className="mx-auto"></Project>
               </Col>
-              <Col lg={3} md={5} sm={12} className="mx-md-4 mx-xlg-5">
-                <Project color="white" text="Rails Job Board App" image={Outsource}></Project>
+              <Col lg={4} sm={6} className="">
+                <Project color="white" text="Rails Job Board App" image={Outsource} header="Outsource" className="mx-auto"></Project>
                 </Col>
-              <Col lg={3} md={5} className="mx-md-4 mx-xlg-5">
-                <Project color="white" text="PHP and Symfony Documentation" image={Desygner}></Project>
+              <Col lg={4} sm={6} className="mx-auto">
+                <Project color="white" text="Tutor search" image={Tutal} header="Tutal (WIP)" className="mx-auto"></Project>
               </Col>
+              {/* <Col lg={3} md={6} className="">
+                <Project color="white" text="PHP and Symfony" image={Desygner} className="mx-auto"></Project>
+              </Col> */}
               {/* <Col lg={3} md={5} className="mx-md-3 mx-lg-0">
                 <Project color="white" text="PHP and Symfony Documentation" image={Desygner}></Project>
               </Col> */}
             </Row>
           </Container>
           <Container className="mt-5">
-              <div className="mt-5 text-md-start text-center">
-              <h2 className="mt-5">Skills</h2>
-              <p className="mb-5">Some things i've learnt</p>
-              </div>
+              <Row><h2 className="mt-5 text-center text-md-start">Skills</h2></Row>
+              <Row><p className="mb-5 text-center text-md-start">Some things i've learnt</p></Row>
           </Container>
-          <Container className="w-75 skills align-items-center">
-              <Row className="bg-white align-items-center pt-5 rounded-3">
+          <Container className="w-75 skills">
+              <Row className="pt-5 rounded-3">
                 <Col lg={2} md={4} xs={6} className="mb-4">
                   <img src={HTML} alt="HTML logo" className="w-50 mx-auto d-block mb-3"/>
                  <h3 className="text-center">HTML</h3>

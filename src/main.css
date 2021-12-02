@@ -9,7 +9,7 @@ body, html {
     position: relative;
     top: 0px;
     left: 0px;
-    z-index: 5;
+    z-index: 6;
 }
 
  p, h1, h2{
@@ -43,7 +43,7 @@ P {
     position: relative;
     left: -203px;
     top: -200px;
-    z-index: 0;
+    z-index: 5;
     width: 100%;
     /* visibility: hidden; */
 }
@@ -103,6 +103,9 @@ P {
     /* visibility: hidden; */
 }
 
+.w-lg-80 {
+    width: 80%;
+}
 .nav-link {
     font-size: 24px;
     color: black;
@@ -110,6 +113,13 @@ P {
 
 #bubble svg {
     fill: white;
+}
+
+.skills { 
+    background-color: #F8C460;
+    color:white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .remove-all-margin{
     margin:0 ! important;
@@ -143,24 +153,6 @@ P {
         }
       }
 
-      .project{
-        /* width: 200px;
-        height: 200px;
-        background: orange; */
-        
-      }
+    .shrink { transition: all .2s ease-in-out; }
+    .shrink:hover { transform: scale(.9); }
 
-      @keyframes wipe-enter {
-        0% {
-            transform: scale(0, .025);
-        }
-        50% {
-            transform: scale(1, .025);
-        }
-    }
-
-      @media (prefers-reduced-motion: no-preference) {
-        .project-animation {
-          animation: wipe-enter 1s 1;
-        }
-      }

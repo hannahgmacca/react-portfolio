@@ -3,23 +3,22 @@ import styled from 'styled-components'
 import {Col, Container, Row} from 'react-bootstrap';
 
 const ProjectCard = styled.div`
-    background-color:  ${props => props.color || "palevioletred"};
-    min-height: 300px;
-    min-width: 300px;
+    background: linear-gradient(180deg, #F8C460 50%, white 50%);
+    // min-width: 250px;
     z-index:5;
-    position: relative;
+    // position: relative;
     border-radius: 20px;
-    margin: 25px;
+    // margin: 25px;
  
 
 `;
 
 const ProjectImage = styled.img`
-    width: 100%;
+    // width: 100%;
     margin: 0 auto;
     display: block;
     max-height: 190px;
-    min-height: 190px;
+    // min-height: 190px;
 `;
 
 const ProjectHeader = styled.h3`
@@ -31,22 +30,32 @@ const ProjectText = styled.p`
     color: #999CA0;
 `
 
+// const CardBG = styled.div`
+//     background-color: black;
+//     height: 200px;
+// `
+
+const CardInner = styled.div`
+    // position: relative;
+    // top: 0px;
+    // left: 0px;
+`
+
 export default class Project extends Component {
   render() {
     return (
-      <div className="project-wrapper">
-      <ProjectCard color={this.props.color} className="mx-lg-auto">
-        <div className="project">
-        <Container className="p-0">
+      
+      <ProjectCard color={this.props.color} className="mx-md-auto shrink mb-sm-4 mb-3">  
+     {/* <CardBG></CardBG> */}
+        <CardInner className="p-0">
+        
             <ProjectImage src={this.props.image} className="mt-2 p-3 pb-0"></ProjectImage>   
             <Container className="pt-3 mt-3">
-            <ProjectHeader className="">Project Header</ProjectHeader >
+            <ProjectHeader className="">{this.props.header}</ProjectHeader >
             <ProjectText>{this.props.text}</ProjectText>
             </Container>
-        </Container>
-        </div>
+        </CardInner>
       </ProjectCard>
-      </div>
     )
   }
 }
