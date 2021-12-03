@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using the basic template.
+# React Portfolio (2021)
 
 ## What's in the basic template?
 - It includes node-sass, and a style.scss (and removes all .css files)
