@@ -10,6 +10,8 @@ app.use(express.json());
 app.use("/", router);
 app.listen(process.env.PORT || 5000, () => console.log("Server Running"));
 
+app.get('/', (req, res) => { res.send('Hello from Express!')});
+
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -47,5 +49,3 @@ const contactEmail = nodemailer.createTransport({
       }
     });
   });
-
-  app.get('/', (req, res) => { res.send('Hello from Express!');
