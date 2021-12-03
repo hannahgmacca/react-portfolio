@@ -1,6 +1,6 @@
 body, html {
     background-color: #FFD0D0;
-    font-family: 'AvertaStd-Semibold';
+    font-family: 'avertastd-semiboluploadedfile', Arial, sans-serif;
     color: black;
     
 }
@@ -32,7 +32,7 @@ h2 {
 }
 
 P {
-    font-family: 'AvertaStd-Regular';
+    font-family: 'avertastd-regularuploadedfile', Arial, sans-serif;
     /* font-style: normal;
     font-weight: 400; */
     font-size: 20px;
@@ -160,6 +160,11 @@ P {
         .contact-form { 
             width: 75%;
         }
+
+        .shrink { transition: all .2s ease-in-out; }
+        .shrink:hover { transform: scale(.9); }
+        .rise { transition: all .2s ease-in-out;}
+        .rise:hover { margin: -30px;}
     }
     
     @media only screen and (min-width: 600px) {
@@ -193,8 +198,21 @@ P {
 
       }
 
-    .shrink { transition: all .2s ease-in-out; }
-    .shrink:hover { transform: scale(.9); }
-    .rise { transition: all .2s ease-in-out;}
-    .rise:hover { margin: -30px;}
-
+    @font-face {
+        font-family: 'avertastd-regularuploadedfile';
+        src: url('font/avertastd-regular-webfont.woff2') format('woff2'),
+             url('font/avertastd-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    @font-face {
+        font-family: 'avertastd-semiboluploadedfile';
+        src: url('font/avertastd-semibold-webfont.woff2') format('woff2'),
+             url('font/avertastd-semibold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
