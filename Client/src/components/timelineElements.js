@@ -102,7 +102,7 @@ let timelineElements = [
       description:
         "React Native + Express/MongoDB mobile app for a client that needed a simple way for employees to enter their hours worked and have supervisors approve. RESTful API was built to support timesheet filtering and export to CSV.",
       date: "May 2024",
-      icon: "job",
+      icon: "project",
       buttonText: "https://github.com/hannahgmacca/ontime-express-api"
     },
 
