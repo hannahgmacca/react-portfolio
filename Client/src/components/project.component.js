@@ -37,7 +37,7 @@ export default class Project extends Component {
   render() {
     return (
       
-      <ProjectCard color={this.props.color} className="mx-md-auto rise mb-sm-4 mb-3" onClick={(e) => handleClick(this.props.link, e)}>  
+      <ProjectCard color={this.props.color} style={{cursor: 'pointer', minWidth: '270px'}} className="mx-md-auto rise mb-sm-4 mb-3" onClick={(e) => handleClick(this.props.link, e)}>  
      {/* <CardBG></CardBG> */}
         <CardInner className="p-0">
         

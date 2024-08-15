@@ -1,11 +1,11 @@
 let timelineElements = [
     {
       id: 1,
-      title: "Bachelor of IT (UX/UI)",
+      title: "Bachelor of IT (UX/UI, Programming)",
       location: "Southern Cross University",
       description:
         "Learning UI design through prototyping websites on Adobe XD and Figma. Studied the principles of how design choices can impact user experience.",
-      date: "March 2019 - November 2020",
+      date: "March 2019 - October 2024",
       icon: "school",
     },
     {
@@ -14,7 +14,7 @@ let timelineElements = [
       location: "Coder Academy",
       description:
       "Building full-stack applications using technologies such as HTML/CSS, Javascript, Rails and React. Assessing different algorithms and calculating big 0 of an appication. Project management tools used such as Trello, and version control tools such as Git CLI. ",
-      date: "April 2021 - present",
+      date: "April 2021 - January 2022",
       icon: "school",
     },
     {
@@ -54,18 +54,46 @@ let timelineElements = [
         location: "Desygner, Gold Coast",
         description:
         "Introduced to their PHP/Symfony application by writing the documentation for their API. Used my understanding of the MVC and communication with the team to navigate the foreign and complex codebase. Built a postman collection so I could understand the request/response payload for their endpoints. Added an authorisation interface to the API.",
-        date: "October 2021 - present",
+        date: "October 2021 - December 2021",
         icon: "job"
     },
     {
       id: 6,
-      title: "Tutal (WIP)",
+      title: "Tutal",
       location: "React Rails Tutor Search Application",
       description:
-        "Full-stack application being built as a group for Coder Academy. Due Jan 2022.",
+        "Full-stack Rails API + React application being built as a group for Coder Academy",
       date: "December 2021",
       icon: "project",
       buttonText: "https://github.com/russ-13/react-tutal"
+    },
+    {
+      id: 7,
+      title: "Junior Web Developer",
+      location: "Village Roadshow Themeparks, Gold Coast",
+      description:
+        "The role included maintaining an in-house developed theme park operations application used for centralising data collected from the various areas within the business. Data managed ranged from customer ticket purchases and activations to rollercoaster maintenance scheduling and performance show times.",
+      date: "December 2021 - October 2022",
+      icon: "job",
+    },
+    {
+      id: 8,
+      title: "Full-stack Software Developer",
+      location: "FIIG Securities",
+      description:
+        "My responsibilities include building and maintaining the .NET 3.1/6 APIs used to serve both SPAs. We use a microservice architecture alongside domain driven design (DDD). My notable contributions include building an internal tool which is used to construct complex portfolios (such as buy/sell switch trades), with a focus on having an intuitive UI to see projected cashflows and yields on portfolio execution. The role is hands on with AWS resources such as EC2, RDS and Elastic Beanstalk to name a few.",
+      date: "October 2022 - Present",
+      icon: "job",
+    },
+    {
+      id: 9,
+      title: "PocketPT",
+      location: "MERN PWA for tracking my workouts",
+      description:
+        "MongoDB Express API + React Progressive Web App i built so that i can easily track my strength workouts. Allowed me to learn more complex SPA state management concepts in my own time, plus get hands on experience with a non-relational database. Still actively using and developing.",
+      date: "August 2023",
+      icon: "project",
+      buttonText: "https://github.com/hannahgmacca/pocketPT-react"
     },
   ];
   
