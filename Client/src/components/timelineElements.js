@@ -88,13 +88,24 @@ let timelineElements = [
     {
       id: 9,
       title: "PocketPT",
-      location: "MERN PWA for tracking my workouts",
+      location: "MERN PWA Workout Tracker",
       description:
-        "MongoDB Express API + React Progressive Web App i built so that i can easily track my strength workouts. Allowed me to learn more complex SPA state management concepts in my own time, plus get hands on experience with a non-relational database. Still actively using and developing.",
-      date: "August 2023",
+        "React + Express/MongoDB Progressive Web App i built so that i can easily track my strength workouts. Allowed me to learn more complex SPA state management concepts in my own time, plus get hands on experience with a non-relational database. Still actively using and developing.",
+      date: "August 2023 - Present",
       icon: "project",
       buttonText: "https://github.com/hannahgmacca/pocketPT-react"
     },
+    {
+      id: 10,
+      title: "OnTime (for PacBuild)",
+      location: "MERN (Native) Timesheet Management",
+      description:
+        "React Native + Express/MongoDB mobile app for a client that needed a simple way for employees to enter their hours worked and have supervisors approve. Rest API was build to support timesheet filtering and export to CSV.",
+      date: "May 2024",
+      icon: "job",
+      buttonText: "https://github.com/hannahgmacca/ontime-express-api"
+    },
+
   ];
   
   export default timelineElements;

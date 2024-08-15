@@ -12,7 +12,7 @@ import SQL from "../images/sql.png"
 import MongoDB from "../images/mongodb.webp"
 import Angular from "../images/angular.png"
 import Rails from "../images/rails.png";
-
+import OnTime from "../images/ontime.png";
 import ReactImg from "../images/react.png"
 import Git from "../images/git.png";
 import LinkedIn from "../images/linkedin.png";
@@ -31,8 +31,8 @@ export default class Landing extends Component {
               <Col lg={4} className="mx-auto ms-lg-3 mt-lg-5">
                 <h1 className="text-lg-start text-center">Welcome!</h1>
                 <p className="text-lg-start text-center">
-                  My name is Hannah. I’m a fullstack mid-level software engineer with a love for user experience and technology. <br/><br/>
-                  I love combining convention with creativity in order to problem solve.
+                  I'm Hannah, a mid-level software engineer who thrives when working across all layers of the stack. My foundations are in user experience, but i've taken a deep interest in all things backend. Including API architecture, database design and infrastructure..<br/><br/>
+                  I love combining convention with creativity when problem solving, and aim to grow my skills agnostic of a specifc framework or language.
                 </p>
                 <Container classname="social-links">
                   <Row className="mt-4 social-links">
@@ -68,21 +68,24 @@ export default class Landing extends Component {
              </Row>
           </Container>
          
-          <Container fluid>
+          <Container>
             <Row className="pt-5 mx-auto">
-            <Col md={6} xxl={2} className="mx-auto">
-                <Project color="white" text="MERN PWA for tracking workouts" image={PocketPT} header="PocketPT" className="mx-auto" link="https://github.com/hannahgmacca/pocketPT-react"></Project>
+            <Col md={6} xxl={4} className="mx-auto">
+                <Project color="white" text="MERN PWA Workout Tracker" image={PocketPT} header="PocketPT" className="mx-auto" link="https://github.com/hannahgmacca/pocketPT-react"></Project>
               </Col>
-              <Col md={6} xxl={2} className="mx-auto">
+              <Col md={6} xxl={4} className="mx-auto">
+                <Project color="white" text="MERN (Native) Timesheet Management" image={OnTime} header="OnTime (for PacBuild)" className="mx-auto" link="https://github.com/hannahgmacca/ontime-express-api"></Project>
+              </Col>
+              <Col md={6} xxl={4} className="mx-auto">
                 <Project color="white" text="Ruby CLI Game" image={Terminal} header="AirBnB Escape" className="mx-auto" link="https://github.com/hannahgmacca/ruby-escape-game"></Project>
               </Col>
-              <Col md={6} xxl={2} className="mx-auto">
-                <Project color="white" text="Rails Job Board App" image={Outsource} header="Outsource" className="mx-auto" link="https://github.com/hannahgmacca/rails-outsource"></Project>
+              <Col md={6} xxl={4} className="mx-auto">
+                <Project color="white" text="Rails Job Board" image={Outsource} header="Outsource" className="mx-auto" link="https://github.com/hannahgmacca/rails-outsource"></Project>
                 </Col>
-              <Col md={6} xxl={2} className="mx-auto">
+              <Col md={6} xxl={4} className="mx-auto">
                 <Project color="white" text="Javascript + Poke API App" image={Pokemon} header="Pokemon Card" className="mx-auto" link="https://github.com/Ausiarm/PokemonCard"></Project>
               </Col>
-              <Col md={6} xxl={2} className="mx-auto">
+              <Col md={6} xxl={4} className="mx-auto">
                 <Project color="white" text="React + Rails Tutor Search App" image={Tutal} header="Tutal" className="mx-auto" link="https://github.com/russ-13/react-tutal"></Project>
               </Col>
              

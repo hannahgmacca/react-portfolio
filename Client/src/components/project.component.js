@@ -11,11 +11,10 @@ const ProjectCard = styled.div`
 const ProjectImage = styled.img`
     margin: 0 auto;
     display: block;
-    max-height: 150px;
+    max-height: 250px;
 `;
 
 const ProjectHeader = styled.h3`
-    line-height: 0px
 `;
 
 const ProjectText = styled.p`
