@@ -31,7 +31,7 @@ export default class Landing extends Component {
               <Col lg={4} className="mx-auto ms-lg-3 mt-lg-5">
                 <h1 className="text-lg-start text-center">Welcome!</h1>
                 <p className="text-lg-start text-center">
-                  I'm Hannah, a mid-level software engineer who thrives when working across all layers of the stack. My foundations are in user experience, but i've taken a deep interest in all things backend. Including API architecture, database design and infrastructure..<br/><br/>
+                  I'm Hannah, a mid-level software engineer who thrives when working across all layers of the stack. My foundations are in user experience, but i've taken a deep interest in all things backend. Including API architecture, database design and infrastructure.<br/><br/>
                   I love combining convention with creativity when problem solving, and aim to grow my skills agnostic of a specifc framework or language.
                 </p>
                 <Container classname="social-links">
