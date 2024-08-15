@@ -68,8 +68,8 @@ export default class Landing extends Component {
              </Row>
           </Container>
          
-          <Container fluid className="px-lg-5">
-            <Row className="pt-5 mx-auto px-lg-5">
+          <Container fluid>
+            <Row className="pt-5 mx-auto">
             <Col md={6} xxl={2} className="mx-auto">
                 <Project color="white" text="MERN PWA for tracking workouts" image={PocketPT} header="PocketPT" className="mx-auto" link="https://github.com/hannahgmacca/pocketPT-react"></Project>
               </Col>

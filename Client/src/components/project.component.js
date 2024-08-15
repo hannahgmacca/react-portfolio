@@ -11,7 +11,7 @@ const ProjectCard = styled.div`
 const ProjectImage = styled.img`
     margin: 0 auto;
     display: block;
-    max-height: 190px;
+    max-height: 150px;
 `;
 
 const ProjectHeader = styled.h3`
@@ -37,7 +37,7 @@ export default class Project extends Component {
   render() {
     return (
       
-      <ProjectCard color={this.props.color} style={{cursor: 'pointer', minWidth: '270px'}} className="mx-md-auto rise mb-sm-4 mb-3" onClick={(e) => handleClick(this.props.link, e)}>  
+      <ProjectCard color={this.props.color} style={{cursor: 'pointer', minWidth: '240px'}} className="mx-md-auto rise mb-sm-4 mb-3" onClick={(e) => handleClick(this.props.link, e)}>  
      {/* <CardBG></CardBG> */}
         <CardInner className="p-0">
         
